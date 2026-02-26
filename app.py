@@ -31,8 +31,8 @@ with st.form("input_form"):
         
     with col2:
         st.subheader("Data Waktu & Transit")
-        departure_time = st.selectbox("Waktu Keberangkatan", ['Early_Morning', 'Morning', 'Afternoon', 'Evening', 'Night', 'Late_Night'])
-        arrival_time = st.selectbox("Waktu Kedatangan", ['Early_Morning', 'Morning', 'Afternoon', 'Evening', 'Night', 'Late_Night'])
+        departure_time = st.selectbox("Waktu Keberangkatan", ['Early Morning', 'Morning', 'Afternoon', 'Evening', 'Night', 'Late Night'])
+        arrival_time = st.selectbox("Waktu Kedatangan", ['Early Morning', 'Morning', 'Afternoon', 'Evening', 'Night', 'Late Night'])
         stops = st.selectbox("Jumlah Transit", ['zero', 'one', 'two_or_more'])
         
     st.subheader("Data Durasi Matematis")
@@ -72,4 +72,5 @@ if submit:
             st.info("Prediksi dihitung menggunakan algoritma Random Forest dengan R2 Score 0.9861 dan MAE 1116.11.")
             
         except Exception as e:
+
             st.error(f"Terjadi kesalahan komputasi internal: {e}")
