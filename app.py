@@ -68,10 +68,11 @@ if submit:
             predicted_price = model.predict(processed_data)[0]
             
             # Menampilkan Hasil
-            st.success(f"### Estimasi Harga Tiket: **Rp {predicted_price:,.2f}**")
+            st.success(f"### Estimasi Harga Tiket: **INR {predicted_price:,.2f}**")
             st.info("Prediksi dihitung menggunakan algoritma Random Forest dengan R2 Score 0.9861 dan MAE 1116.11.")
             
         except Exception as e:
 
             st.error(f"Terjadi kesalahan komputasi internal: {e}")
+
 
