@@ -24,7 +24,7 @@ with st.form("input_form"):
     
     with col1:
         st.subheader("Data Rute & Maskapai")
-        airline = st.selectbox("Maskapai", ['Vistara', 'Air_India', 'Indigo', 'GO_FIRST', 'AirAsia', 'SpiceJet'])
+        airline = st.selectbox("Maskapai", ['Vistara', 'Air India', 'Indigo', 'Go First', 'Airasia', 'Spicejet'])
         flight_class = st.selectbox("Kelas Penerbangan", ['Economy', 'Business'])
         source_city = st.selectbox("Kota Asal", ['Delhi', 'Mumbai', 'Bangalore', 'Kolkata', 'Hyderabad', 'Chennai'])
         destination_city = st.selectbox("Kota Tujuan", ['Mumbai', 'Delhi', 'Bangalore', 'Kolkata', 'Hyderabad', 'Chennai'])
@@ -74,3 +74,4 @@ if submit:
         except Exception as e:
 
             st.error(f"Terjadi kesalahan komputasi internal: {e}")
+
